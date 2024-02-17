@@ -1,0 +1,22 @@
+*{
+    font-size: 30px;
+}
+h1{
+    color: darkorange;
+    font-size: 50px;
+}
+h3{
+    color: darkgoldenrod;
+    font-size: 40px;
+}
+p{  color: rgb(44, 44, 44);
+    font-size: 25px;
+}
+a{
+    color: gray;
+    font-size: 30px;
+}
+span{
+    color: red;
+    font-size: 40px;
+}
