@@ -1,7 +1,51 @@
 *{
     font-size: 30px;
 }
-h1{
+.dh{
+    width: 100%;
+    background-color: #205f83;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #205f83;
+    
+    margin: 0 auto;
+}
+
+.dh li {
+    display: flex;
+    float: left;
+}
+ 
+.dh li a {
+    display: block;
+    color: rgb(221, 221, 221);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ 
+/*鼠标移动到选项上修改背景颜色 */
+.dh li a:hover {
+    background-color: #22222286;
+}
+.active {
+    background-color: #99620f;
+}
+
+li {
+    border-right: 1px solid #bbb;
+}
+ 
+li:last-child {
+    border-right: none;
+}
+/*fonts*/
+h2{
     color: rgb(253, 163, 54);
     font-size: 35px;
 }
@@ -14,9 +58,27 @@ p{  color: rgb(44, 44, 44);
 }
 a{
     color: gray;
-    font-size: 30px;
+    font-size: 15px;
 }
 span{
-    color: red;
+    color: rgb(201, 43, 43);
     font-size: 40px;
+}
+/*lit*/
+body {
+    width: 100%;
+    position:fixed;
+    background-image: url('bgpicture.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+.main{
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    display: flex;
+    border: 200px solid rgba(199, 199, 199, 0.705);
+
+    margin: 25px;
 }
