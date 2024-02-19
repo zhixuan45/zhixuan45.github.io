@@ -4,13 +4,14 @@
 .dh{
     width: 100%;
     background-color: #205f83;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
     list-style-type: none;
-    margin: 0;
+
     padding: 0;
     overflow: hidden;
+
     background-color: #205f83;
     
     margin: 0 auto;
@@ -19,8 +20,12 @@
 .dh li {
     display: flex;
     float: left;
+    border-right: 1px solid #bbb;
 }
- 
+.dh li:last-child {
+    border-right: none;
+}
+
 .dh li a {
     display: block;
     color: rgb(221, 221, 221);
@@ -34,16 +39,10 @@
     background-color: #22222286;
 }
 .active {
-    background-color: #99620f;
+    background-color: #0f5699;
 }
 
-li {
-    border-right: 1px solid #bbb;
-}
- 
-li:last-child {
-    border-right: none;
-}
+
 /*fonts*/
 h2{
     color: rgb(253, 163, 54);
@@ -64,6 +63,7 @@ span{
     color: rgb(201, 43, 43);
     font-size: 40px;
 }
+
 /*lit*/
 body {
     width: 100%;
@@ -78,7 +78,6 @@ body {
     -moz-border-radius: 20px;
     border-radius: 20px;
     display: flex;
-    border: 200px solid rgba(199, 199, 199, 0.705);
+    background-color: #c7c7c7b4;
 
-    margin: 25px;
 }
