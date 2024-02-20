@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+.dh{
+    width: 100%;
+    background-color: #205f83;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    list-style-type: none;
+
+    padding: 0;
+    overflow: hidden;
+
+    background-color: #205f83;
+    
+    margin: 0 auto;
+}
+
+.dh li {
+    display: flex;
+    float: left;
+    border-right: 1px solid #bbb;
+}
+.dh li:last-child {
+    border-right: none;
+}
+
+.dh li a {
+    display: block;
+    color: rgb(221, 221, 221);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ 
+/*鼠标移动到选项上修改背景颜色 */
+.dh li a:hover {
+    background-color: #22222286;
+}
+.active {
+    background-color: #0f5699;
+}
