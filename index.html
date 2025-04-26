@@ -12,6 +12,15 @@
 </head>
     
 <body>
+    <script>
+        // 获取Bing每日图片并设置为背景
+        fetch('https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=zh-CN')
+            .then(response => response.json())
+            .then(data => {
+                const imageUrl = 'https://www.bing.com' + data.images[0].url;
+                document.body.style.backgroundImage = `url(${imageUrl})`;
+            });
+    </script>
 
     <div class="dh">
 
@@ -20,6 +29,8 @@
             <li><a class="active" href="index.html">主页</a></li>
             <li><a href="articles.html">文章</a></li>
             <li><a href="#contact">联系</a></li>
+            <li><a href="https://github.com" target="_blank">GitHub</a></li>
+            <li><a href="https://www.pixiv.net" target="_blank">Pixiv</a></li>
             <li style="float:right"><a href="pages/about.html">关于</a></li>
         </ul>
     </div>
@@ -28,16 +39,7 @@
         </iframe>
     </div>
     <div class="main">
-    
-    <h3>
-        流萤
-    </h3>
-    <p>
-        流萤流萤流!
-    </p>    
 
-    
-    </div>
 </body>
 </html>
 
