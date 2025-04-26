@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>文章详情</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='scr/main.css'>
+    <script src='https://cdn.jsdelivr.net/npm/marked/marked.min.js'></script>
+</head>
+<body>
+    <div class="dh">
+        <ul class="dh">
+            <li><a href="index.html">主页</a></li>
+            <li><a href="articles.html">文章</a></li>
+            <li><a href="#contact">联系</a></li>
+            <li style="float:right"><a href="pages/about.html">关于</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div id="article-content"></div>
+    </div>
+    <script>
+        // 从URL获取文章路径并加载内容
+        const params = new URLSearchParams(window.location.search);
+        const articlePath = params.get('path');
+        if(articlePath) {
+            fetch(articlePath)
+                .then(response => response.text())
+                .then(markdown => {
+                    document.getElementById('article-content').innerHTML = marked.parse(markdown);
+                });
+        }
+    </script>
+</body>
+</html>

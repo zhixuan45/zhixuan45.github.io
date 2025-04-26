@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>文章列表</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='scr/main.css'>
+    <script src='https://cdn.jsdelivr.net/npm/marked/marked.min.js'></script>
+</head>
+<body>
+    <div class="dh">
+        <ul class="dh">
+            <li><a href="index.html">主页</a></li>
+            <li><a class="active" href="articles.html">文章</a></li>
+            <li><a href="#contact">联系</a></li>
+            <li style="float:right"><a href="pages/about.html">关于</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <h2>文章列表</h2>
+        <div id="article-list"></div>
+    </div>
+    <script>
+        // 动态加载文章列表
+        fetch('articles/')
+            .then(response => response.text())
+            .then(html => {
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                const links = doc.querySelectorAll('a[href$=".md"]');
+                
+                const articleList = document.getElementById('article-list');
+                links.forEach(link => {
+                    const articleLink = document.createElement('a');
+                    articleLink.href = `#${link.href}`;
+                    articleLink.textContent = link.textContent;
+                    articleLink.style.display = 'block';
+                    articleLink.style.margin = '10px 0';
+                    articleLink.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        window.location.href = `article.html?path=${link.href}`;
+                    });
+                    articleList.appendChild(articleLink);
+                });
+            });
+            
+        function loadArticle(path) {
+            fetch(path)
+                .then(response => response.text())
+                .then(markdown => {
+                    document.getElementById('article-list').innerHTML = marked.parse(markdown);
+                });
+        }
+    </script>
+</body>
+</html>

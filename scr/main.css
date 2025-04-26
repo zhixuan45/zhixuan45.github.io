@@ -10,22 +10,22 @@
 
 /*fonts*/
 h2{
-    color: rgb(253, 163, 54);
+    color: #FF8C42; /* 落日橙 */
     font-size: 35px;
 }
 h3{
-    color: rgb(224, 180, 67);
+    color: #2E86AB; /* 暗天蓝 */
     font-size: 30px;
 }
-p{  color: rgb(44, 44, 44);
+p{  color: #333333;
     font-size: 25px;
 }
 a{
-    color: gray;
+    color: #2E86AB; /* 暗天蓝 */
     font-size: 15px;
 }
 span{
-    color: rgb(201, 43, 43);
+    color: #FF8C42; /* 落日橙 */
     font-size: 40px;
 }
 
@@ -33,7 +33,7 @@ span{
 body {
     width: 100%;
     position:fixed;
-    background-image: url('bgpicture.jpg');
+    background-color: #FFFFFF; /* 白色背景 */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -43,7 +43,10 @@ body {
     -moz-border-radius: 20px;
     border-radius: 20px;
     display: flex;
-    background-color: #c7c7c7b4;
+    background-color: rgba(255, 255, 255, 0.9); /* 半透明白色 */
     border: 200px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
