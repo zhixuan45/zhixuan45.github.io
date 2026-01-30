@@ -43,11 +43,11 @@ function initMusicPlayer() {
     const sources = {
         cn: {
             name: '网易云 (CN)',
-            html: '<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=52 src="//music.163.com/outchain/player?type=2&id=2124631325&auto=1&height=32"></iframe>'
+            html: '<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=2130311359&auto=0&height=66"></iframe>'
         },
         global: {
             name: 'YouTube (Global)',
-            html: '<iframe width="280" height="157" src="https://www.youtube.com/embed/2-x-g0_g_0o?si=sJDk_l0H9zC_Xw1_&controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+            html: '<iframe width="280" height="157" src="https://www.youtube.com/embed/0DugaZiG0HQ?si=SlcIz6N2lYIM7gJA&controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
         }
     };
 
