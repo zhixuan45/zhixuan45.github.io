@@ -1,0 +1,10 @@
+[
+    {
+        "id": "sample",
+        "title": "Hello World - 示例文章",
+        "date": "2023-10-27",
+        "summary": "这是一个Markdown文章的测试示例。",
+        "file": "articles/sample.md",
+        "tags": ["测试", "示例"]
+    }
+]

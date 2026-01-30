@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>标题无效</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='scr/main.css'>
+
+    <script src='main.css'></script>
+</head>
+    
+<body>
+    <script>
+        // 获取Bing每日图片并设置为背景
+        fetch('https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=zh-CN')
+            .then(response => response.json())
+            .then(data => {
+                const imageUrl = 'https://www.bing.com' + data.images[0].url;
+                document.body.style.backgroundImage = `url(${imageUrl})`;
+            });
+    </script>
+
+    <div class="dh">
+
+    
+        <ul class="dh">
+            <li><a class="active" href="index.html">主页</a></li>
+            <li><a href="articles.html">文章</a></li>
+            <li><a href="#contact">联系</a></li>
+            <li><a href="https://github.com" target="_blank">GitHub</a></li>
+            <li><a href="https://www.pixiv.net" target="_blank">Pixiv</a></li>
+            <li style="float:right"><a href="pages/about.html">关于</a></li>
+        </ul>
+    </div>
+    <div class="gotop">
+        <iframe class="go-top" frameborder="no" marginwidth="0" marginheight="0" width=330 height=86 src="https://music.163.com/outchain/player?type=2&id=2124631325&auto=1&height=66">
+        </iframe>
+    </div>
+    <div class="main">
+
+</body>
+</html>
+
