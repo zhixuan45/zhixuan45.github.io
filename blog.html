@@ -23,8 +23,20 @@
 
     <div class="container">
         <h1 style="margin-bottom: 2rem; text-align: center; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">所有文章</h1>
+        <!-- 类别检索区域 -->
+        <div class="category-filters" style="margin-bottom: 2rem; display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+            <button class="category-btn glass-container active" data-category="all" style="background: var(--primary-color); color: white; padding: 0.5rem 1rem; border: none; cursor: pointer; border-radius: 0.5rem; transition: background 0.3s;">全部</button>
+<button class="category-btn glass-container" data-category="随笔" style="padding: 0.5rem 1rem; border: none; cursor: pointer; border-radius: 0.5rem; background: var(--card-bg); color: var(--text-color); transition: background 0.3s, color 0.3s">随笔</button>
+        </div>
+
         <div id="all-posts" class="post-grid">
-            <!-- Posts will be injected here -->
+            
+        <a href="articles/sample.html" class="post-card glass-container" data-category="随笔">
+            <h3 class="post-title">Hello World - 示例文章</h3>
+            <div class="post-meta">2023-10-27 - 随笔</div>
+            <p class="post-summary">这是一个Markdown文章的测试示例。</p>
+        </a>
+    
         </div>
     </div>
 

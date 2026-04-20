@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>文章阅读 - Zhixuan's Blog</title>
+    <title>所有文章 - Zhixuan's Blog</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -14,17 +14,22 @@
         <a href="index.html" class="nav-brand">Zhixuan</a>
         <ul class="nav-links">
             <li><a href="index.html">主页</a></li>
-            <li><a href="blog.html">文章</a></li>
+            <li><a href="blog.html" style="color: var(--primary-color);">文章</a></li>
             <li><a href="https://github.com/zhixuan45" target="_blank">GitHub</a></li>
             <li><a href="https://www.pixiv.net" target="_blank">Pixiv</a></li>
             <li><a href="pages/about.html">关于</a></li>
         </ul>
     </nav>
 
-    <div class="container" id="article-container">
-        <!-- Article content will be injected here -->
-        <div class="glass-container article-content" style="text-align: center;">
-            <p>正在加载文章...</p>
+    <div class="container">
+        <h1 style="margin-bottom: 2rem; text-align: center; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">所有文章</h1>
+        <!-- 类别检索区域 -->
+        <div class="category-filters" style="margin-bottom: 2rem; display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+            {{CATEGORIES_INJECT}}
+        </div>
+
+        <div id="all-posts" class="post-grid">
+            {{ALL_POSTS_INJECT}}
         </div>
     </div>
 

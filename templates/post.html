@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{POST_TITLE}} - Zhixuan's Blog</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">Zhixuan</a>
+        <ul class="nav-links">
+            <li><a href="index.html">主页</a></li>
+            <li><a href="blog.html">文章</a></li>
+            <li><a href="https://github.com/zhixuan45" target="_blank">GitHub</a></li>
+            <li><a href="https://www.pixiv.net" target="_blank">Pixiv</a></li>
+            <li><a href="pages/about.html">关于</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="article-container">
+        {{ARTICLE_CONTENT_INJECT}}
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Zhixuan. All rights reserved.</p>
+    </footer>
+
+    <div class="music-widget">
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

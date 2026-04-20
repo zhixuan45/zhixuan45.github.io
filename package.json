@@ -1,0 +1,12 @@
+{
+  "name": "zhixuan45.github.io",
+  "version": "1.0.0",
+  "description": "Static Blog Generator",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "marked": "^11.1.0"
+  }
+}
